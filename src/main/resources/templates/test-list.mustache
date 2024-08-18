@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Mustache Demo</title>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=UTF-8"/>
+
+</head>
+<body>
+<h1>Mustache Demo</h1>
+  <table class="table table-horizontal table-bordered">
+      <thead class="thead-strong">
+      <tr>
+          <th>번호</th>
+      </tr>
+      </thead>
+      <tbody id="tbody">
+      {{#infoList}}
+          <tr>
+              <td>{{#id}} {{id}} {{/id}} {{^id}}빈값{{/id}}</td>
+          </tr>
+      {{/infoList}}
+      </tbody>
+  </table>
+</body>
+</html>
